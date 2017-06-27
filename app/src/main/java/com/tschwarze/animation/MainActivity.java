@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 YoYo.with(Techniques.BounceIn)
-                        .duration(700)
-                        .repeat(1)
+                        .duration(1000)
+                        .repeat(2)
                         .playOn(findViewById(R.id.txt_ausgabe));
             }
         });
@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 YoYo.with(Techniques.RotateIn)
-                        .duration(700)
-                        .repeat(1)
+                        .duration(500)
+                        .repeat(3)
                         .playOn(findViewById(R.id.txt_ausgabe));
             }
         });
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 YoYo.with(Techniques.ZoomIn)
-                        .duration(700)
+                        .duration(1500)
                         .repeat(1)
                         .playOn(findViewById(R.id.txt_ausgabe));
             }
