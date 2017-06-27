@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tschwarze.animation.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp">
+
+        <Button
+            android:id="@+id/btn_fade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_fade"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="303dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/txt_ausgabe"
+            android:layout_alignStart="@+id/txt_ausgabe" />
+
+        <Button
+            android:id="@+id/btn_bounce"
+            android:text="@string/btn_bounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_fade"
+            android:layout_alignBottom="@+id/btn_fade"
+            android:layout_alignRight="@+id/txt_ausgabe"
+            android:layout_alignEnd="@+id/txt_ausgabe" />
+
+        <Button
+            android:id="@+id/btn_rotate"
+            android:text="@string/btn_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_fade"
+            android:layout_alignLeft="@+id/btn_fade"
+            android:layout_alignStart="@+id/btn_fade"
+            android:layout_marginTop="43dp" />
+
+        <Button
+            android:id="@+id/btn_zoom"
+            android:text="@string/btn_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_rotate"
+            android:layout_alignBottom="@+id/btn_rotate"
+            android:layout_alignLeft="@+id/btn_bounce"
+            android:layout_alignStart="@+id/btn_bounce" />
+
+
+        <TextView
+            android:id="@+id/txt_ausgabe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="Das ist ein Text!"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.253" />
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

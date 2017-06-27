@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="btn_fade">Fade</string>
+    <string name="btn_bounce">bounce</string>
+    <string name="btn_rotate">rotate</string>
+    <string name="btn_zoom">zoom</string>
+</resources>
